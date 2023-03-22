@@ -1,0 +1,2395 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+ShaderGui = Instance.new("ScreenGui")
+MenuSelect = Instance.new("Frame")
+TextButton = Instance.new("TextButton")
+TextLabel = Instance.new("TextLabel")
+TextButton_2 = Instance.new("TextButton")
+About = Instance.new("Frame")
+TextLabel_2 = Instance.new("TextLabel")
+TextLabel_3 = Instance.new("TextLabel")
+Settings = Instance.new("Frame")
+XButton = Instance.new("TextButton")
+Bloom = Instance.new("TextButton")
+Fog = Instance.new("TextButton")
+Clouds = Instance.new("TextButton")
+XButton_2 = Instance.new("TextButton")
+WSS = Instance.new("TextButton")
+XButton_3 = Instance.new("TextButton")
+Sky = Instance.new("TextButton")
+LCC = Instance.new("TextButton")
+SCC = Instance.new("TextButton")
+Grass = Instance.new("TextButton")
+XButton_4 = Instance.new("TextButton")
+XButton_5 = Instance.new("TextButton")
+Dof = Instance.new("TextButton")
+SunRays = Instance.new("TextButton")
+XButton_6 = Instance.new("TextButton")
+Preferences = Instance.new("Frame")
+FogSettings = Instance.new("Frame")
+Setting3 = Instance.new("Frame")
+Color1 = Instance.new("TextBox")
+TextLabel_4 = Instance.new("TextLabel")
+Color2 = Instance.new("TextBox")
+Color3aaa = Instance.new("TextBox")
+MenuSelect_2 = Instance.new("Frame")
+TextLabel_5 = Instance.new("TextLabel")
+Setting2 = Instance.new("Frame")
+TextBox = Instance.new("TextBox")
+TextLabel_6 = Instance.new("TextLabel")
+Setting1 = Instance.new("Frame")
+TextBox_2 = Instance.new("TextBox")
+TextLabel_7 = Instance.new("TextLabel")
+BloomSettings = Instance.new("Frame")
+Setting1_2 = Instance.new("Frame")
+TextBox_3 = Instance.new("TextBox")
+TextLabel_8 = Instance.new("TextLabel")
+MenuSelect_3 = Instance.new("Frame")
+TextLabel_9 = Instance.new("TextLabel")
+Setting2_2 = Instance.new("Frame")
+TextBox_4 = Instance.new("TextBox")
+TextLabel_10 = Instance.new("TextLabel")
+Setting3_2 = Instance.new("Frame")
+TextBox_5 = Instance.new("TextBox")
+TextLabel_11 = Instance.new("TextLabel")
+LegacyCC = Instance.new("Frame")
+Setting3_3 = Instance.new("Frame")
+Color1_2 = Instance.new("TextBox")
+TextLabel_12 = Instance.new("TextLabel")
+Color2_2 = Instance.new("TextBox")
+Color3aaa_2 = Instance.new("TextBox")
+MenuSelect_4 = Instance.new("Frame")
+TextLabel_13 = Instance.new("TextLabel")
+Setting2_3 = Instance.new("Frame")
+TextBox_6 = Instance.new("TextBox")
+TextLabel_14 = Instance.new("TextLabel")
+Setting1_3 = Instance.new("Frame")
+TextBox_7 = Instance.new("TextBox")
+TextLabel_15 = Instance.new("TextLabel")
+Setting4 = Instance.new("Frame")
+TextBox_8 = Instance.new("TextBox")
+TextLabel_16 = Instance.new("TextLabel")
+CloudSettings = Instance.new("Frame")
+Setting3_4 = Instance.new("Frame")
+Color1_3 = Instance.new("TextBox")
+TextLabel_17 = Instance.new("TextLabel")
+Color2_3 = Instance.new("TextBox")
+Color3aaa_3 = Instance.new("TextBox")
+MenuSelect_5 = Instance.new("Frame")
+TextLabel_18 = Instance.new("TextLabel")
+Setting2_4 = Instance.new("Frame")
+TextBox_9 = Instance.new("TextBox")
+TextLabel_19 = Instance.new("TextLabel")
+Setting1_4 = Instance.new("Frame")
+TextBox_10 = Instance.new("TextBox")
+TextLabel_20 = Instance.new("TextLabel")
+WaterSettings = Instance.new("Frame")
+Setting3_5 = Instance.new("Frame")
+Color1_4 = Instance.new("TextBox")
+TextLabel_21 = Instance.new("TextLabel")
+Color2_4 = Instance.new("TextBox")
+Color3aaa_4 = Instance.new("TextBox")
+MenuSelect_6 = Instance.new("Frame")
+TextLabel_22 = Instance.new("TextLabel")
+Setting2_5 = Instance.new("Frame")
+TextBox_11 = Instance.new("TextBox")
+TextLabel_23 = Instance.new("TextLabel")
+Setting1_5 = Instance.new("Frame")
+TextBox_12 = Instance.new("TextBox")
+TextLabel_24 = Instance.new("TextLabel")
+Setting4_2 = Instance.new("Frame")
+TextBox_13 = Instance.new("TextBox")
+TextLabel_25 = Instance.new("TextLabel")
+Setting5 = Instance.new("Frame")
+TextBox_14 = Instance.new("TextBox")
+TextLabel_26 = Instance.new("TextLabel")
+SmartCC = Instance.new("Frame")
+Setting3_6 = Instance.new("Frame")
+Color1_5 = Instance.new("TextBox")
+TextLabel_27 = Instance.new("TextLabel")
+Color2_5 = Instance.new("TextBox")
+Color3aaa_5 = Instance.new("TextBox")
+MenuSelect_7 = Instance.new("Frame")
+TextLabel_28 = Instance.new("TextLabel")
+Setting2_6 = Instance.new("Frame")
+TextBox_15 = Instance.new("TextBox")
+TextLabel_29 = Instance.new("TextLabel")
+Setting1_6 = Instance.new("Frame")
+TextBox_16 = Instance.new("TextBox")
+TextLabel_30 = Instance.new("TextLabel")
+SkySettings = Instance.new("Frame")
+MenuSelect_8 = Instance.new("Frame")
+TextLabel_31 = Instance.new("TextLabel")
+Setting2_7 = Instance.new("Frame")
+TextBox_17 = Instance.new("TextBox")
+TextLabel_32 = Instance.new("TextLabel")
+Setting1_7 = Instance.new("Frame")
+TextBox_18 = Instance.new("TextBox")
+TextLabel_33 = Instance.new("TextLabel")
+Setting4_3 = Instance.new("Frame")
+TextBox_19 = Instance.new("TextBox")
+TextLabel_34 = Instance.new("TextLabel")
+Setting3_7 = Instance.new("Frame")
+TextBox_20 = Instance.new("TextBox")
+TextLabel_35 = Instance.new("TextLabel")
+Setting5_2 = Instance.new("Frame")
+TextBox_21 = Instance.new("TextBox")
+TextLabel_36 = Instance.new("TextLabel")
+SunRaysSettings = Instance.new("Frame")
+Setting1_8 = Instance.new("Frame")
+TextBox_22 = Instance.new("TextBox")
+TextLabel_37 = Instance.new("TextLabel")
+MenuSelect_9 = Instance.new("Frame")
+TextLabel_38 = Instance.new("TextLabel")
+Setting2_8 = Instance.new("Frame")
+TextBox_23 = Instance.new("TextBox")
+TextLabel_39 = Instance.new("TextLabel")
+DofSettings = Instance.new("Frame")
+Setting1_9 = Instance.new("Frame")
+TextBox_24 = Instance.new("TextBox")
+TextLabel_40 = Instance.new("TextLabel")
+MenuSelect_10 = Instance.new("Frame")
+TextLabel_41 = Instance.new("TextLabel")
+Setting2_9 = Instance.new("Frame")
+TextBox_25 = Instance.new("TextBox")
+TextLabel_42 = Instance.new("TextLabel")
+Setting3_8 = Instance.new("Frame")
+TextLabel_43 = Instance.new("TextLabel")
+
+--Properties:
+Players = game:GetService("Players")
+player = Players.LocalPlayer
+ShaderGui.Name = "ShaderGui"
+ShaderGui.Parent = player.PlayerGui
+ShaderGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MenuSelect.Name = "MenuSelect"
+MenuSelect.Parent = ShaderGui
+MenuSelect.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect.BackgroundTransparency = 0.500
+MenuSelect.BorderSizePixel = 0
+MenuSelect.Size = UDim2.new(0.216000006, 0, 0.0878186971, 0)
+MenuSelect.ZIndex = 20000
+
+TextButton.Parent = MenuSelect
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0298926793, 0, 0.43148151, 0)
+TextButton.Size = UDim2.new(0.47221297, 0, 0.513871014, 0)
+TextButton.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Settings"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+TextLabel.Parent = MenuSelect
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.0967741907, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.33470732, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Luminance Shaders v2.2"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton_2.Parent = MenuSelect
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.502105594, 0, 0.43148151, 0)
+TextButton_2.Size = UDim2.new(0.466839343, 0, 0.513871014, 0)
+TextButton_2.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "About"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+About.Name = "About"
+About.Parent = ShaderGui
+About.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+About.BorderSizePixel = 0
+About.Size = UDim2.new(0.216000006, 0, 1, 0)
+About.Visible = false
+About.ZIndex = 1000
+
+TextLabel_2.Parent = About
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0540573932, 0, 0.117563739, 0)
+TextLabel_2.Size = UDim2.new(0.891719639, 0, 0.458923519, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Shaders made by Whizify. The purpose of the shaders is to enhance gameplay. I do NOT recommend using my shaders to get upvotes on PCC."
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 33.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = About
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0540573932, 0, 0.576487243, 0)
+TextLabel_3.Size = UDim2.new(0.891719639, 0, 0.264872491, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Click P to hide this menu"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 33.000
+TextLabel_3.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = ShaderGui
+Settings.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Settings.BorderSizePixel = 0
+Settings.Size = UDim2.new(0.216000006, 0, 1, 0)
+Settings.ZIndex = 999
+
+XButton.Name = "XButton"
+XButton.Parent = Settings
+XButton.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+XButton.BackgroundTransparency = 1.000
+XButton.Position = UDim2.new(0.029892683, 0, 0.0991501361, 0)
+XButton.Size = UDim2.new(0.0971512273, 0, 0.037365444, 0)
+XButton.Font = Enum.Font.SourceSans
+XButton.Text = "X"
+XButton.TextColor3 = Color3.fromRGB(188, 188, 188)
+XButton.TextSize = 14.000
+XButton.TextWrapped = true
+
+Bloom.Name = "Bloom"
+Bloom.Parent = Settings
+Bloom.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+Bloom.BackgroundTransparency = 1.000
+Bloom.Position = UDim2.new(0.127043918, 0, 0.0991501287, 0)
+Bloom.Size = UDim2.new(0.841900647, 0, 0.037365444, 0)
+Bloom.Font = Enum.Font.SourceSans
+Bloom.Text = "Bloom"
+Bloom.TextColor3 = Color3.fromRGB(188, 188, 188)
+Bloom.TextSize = 14.000
+Bloom.TextWrapped = true
+
+Fog.Name = "Fog"
+Fog.Parent = Settings
+Fog.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+Fog.BackgroundTransparency = 1.000
+Fog.Position = UDim2.new(0.127043918, 0, 0.135977328, 0)
+Fog.Size = UDim2.new(0.841900647, 0, 0.037365444, 0)
+Fog.Font = Enum.Font.SourceSans
+Fog.Text = "Fog"
+Fog.TextColor3 = Color3.fromRGB(188, 188, 188)
+Fog.TextSize = 14.000
+Fog.TextWrapped = true
+
+Clouds.Name = "Clouds"
+Clouds.Parent = Settings
+Clouds.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+Clouds.BackgroundTransparency = 1.000
+Clouds.Position = UDim2.new(0.127043918, 0, 0.17280452, 0)
+Clouds.Size = UDim2.new(0.841900647, 0, 0.037365444, 0)
+Clouds.Font = Enum.Font.SourceSans
+Clouds.Text = "3D Clouds"
+Clouds.TextColor3 = Color3.fromRGB(188, 188, 188)
+Clouds.TextSize = 14.000
+Clouds.TextWrapped = true
+
+XButton_2.Name = "XButton"
+XButton_2.Parent = Settings
+XButton_2.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+XButton_2.BackgroundTransparency = 1.000
+XButton_2.Position = UDim2.new(0.029892683, 0, 0.17280452, 0)
+XButton_2.Size = UDim2.new(0.0971512273, 0, 0.037365444, 0)
+XButton_2.Font = Enum.Font.SourceSans
+XButton_2.Text = "-"
+XButton_2.TextColor3 = Color3.fromRGB(188, 188, 188)
+XButton_2.TextSize = 14.000
+XButton_2.TextWrapped = true
+
+WSS.Name = "WSS"
+WSS.Parent = Settings
+WSS.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+WSS.BackgroundTransparency = 1.000
+WSS.Position = UDim2.new(0.127043933, 0, 0.210169956, 0)
+WSS.Size = UDim2.new(0.841900647, 0, 0.0362889729, 0)
+WSS.Font = Enum.Font.SourceSans
+WSS.Text = "WaterSettings"
+WSS.TextColor3 = Color3.fromRGB(188, 188, 188)
+WSS.TextSize = 14.000
+WSS.TextWrapped = true
+
+XButton_3.Name = "XButton"
+XButton_3.Parent = Settings
+XButton_3.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+XButton_3.BackgroundTransparency = 1.000
+XButton_3.Position = UDim2.new(0.029892683, 0, 0.320113301, 0)
+XButton_3.Size = UDim2.new(0.0971512273, 0, 0.037365444, 0)
+XButton_3.Font = Enum.Font.SourceSans
+XButton_3.Text = "X"
+XButton_3.TextColor3 = Color3.fromRGB(188, 188, 188)
+XButton_3.TextSize = 14.000
+XButton_3.TextWrapped = true
+
+Sky.Name = "Sky"
+Sky.Parent = Settings
+Sky.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+Sky.BackgroundTransparency = 1.000
+Sky.Position = UDim2.new(0.127043918, 0, 0.357478768, 0)
+Sky.Size = UDim2.new(0.841900885, 0, 0.0368272103, 0)
+Sky.Font = Enum.Font.SourceSans
+Sky.Text = "Sky Settings"
+Sky.TextColor3 = Color3.fromRGB(188, 188, 188)
+Sky.TextSize = 14.000
+Sky.TextWrapped = true
+
+LCC.Name = "LCC"
+LCC.Parent = Settings
+LCC.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+LCC.BackgroundTransparency = 1.000
+LCC.Position = UDim2.new(0.127043933, 0, 0.246997148, 0)
+LCC.Size = UDim2.new(0.841900885, 0, 0.0362889171, 0)
+LCC.Font = Enum.Font.SourceSans
+LCC.Text = "LegacyCC"
+LCC.TextColor3 = Color3.fromRGB(188, 188, 188)
+LCC.TextSize = 14.000
+LCC.TextWrapped = true
+
+SCC.Name = "SCC"
+SCC.Parent = Settings
+SCC.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+SCC.BackgroundTransparency = 1.000
+SCC.Position = UDim2.new(0.127043933, 0, 0.283286065, 0)
+SCC.Size = UDim2.new(0.841900885, 0, 0.0368272103, 0)
+SCC.Font = Enum.Font.SourceSans
+SCC.Text = "SmartCC"
+SCC.TextColor3 = Color3.fromRGB(188, 188, 188)
+SCC.TextSize = 14.000
+SCC.TextWrapped = true
+
+Grass.Name = "Grass"
+Grass.Parent = Settings
+Grass.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+Grass.BackgroundTransparency = 1.000
+Grass.Position = UDim2.new(0.127043918, 0, 0.320113301, 0)
+Grass.Size = UDim2.new(0.841900647, 0, 0.037365444, 0)
+Grass.Font = Enum.Font.SourceSans
+Grass.Text = "RealisticGrass (doesn't work with all executors)"
+Grass.TextColor3 = Color3.fromRGB(188, 188, 188)
+Grass.TextSize = 11.000
+Grass.TextWrapped = true
+
+XButton_4.Name = "XButton"
+XButton_4.Parent = Settings
+XButton_4.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+XButton_4.BackgroundTransparency = 1.000
+XButton_4.Position = UDim2.new(0.0298926812, 0, 0.246458918, 0)
+XButton_4.Size = UDim2.new(0.0971512273, 0, 0.0368271023, 0)
+XButton_4.Font = Enum.Font.SourceSans
+XButton_4.Text = "X"
+XButton_4.TextColor3 = Color3.fromRGB(188, 188, 188)
+XButton_4.TextSize = 14.000
+XButton_4.TextWrapped = true
+
+XButton_5.Name = "XButton"
+XButton_5.Parent = Settings
+XButton_5.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+XButton_5.BackgroundTransparency = 1.000
+XButton_5.Position = UDim2.new(0.0298926793, 0, 0.394305944, 0)
+XButton_5.Size = UDim2.new(0.0971512273, 0, 0.0382435471, 0)
+XButton_5.Font = Enum.Font.SourceSans
+XButton_5.Text = "-"
+XButton_5.TextColor3 = Color3.fromRGB(188, 188, 188)
+XButton_5.TextSize = 14.000
+XButton_5.TextWrapped = true
+
+Dof.Name = "Dof"
+Dof.Parent = Settings
+Dof.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+Dof.BackgroundTransparency = 1.000
+Dof.Position = UDim2.new(0.127043918, 0, 0.394305944, 0)
+Dof.Size = UDim2.new(0.841900647, 0, 0.0382435471, 0)
+Dof.Font = Enum.Font.SourceSans
+Dof.Text = "Depth of field"
+Dof.TextColor3 = Color3.fromRGB(188, 188, 188)
+Dof.TextSize = 14.000
+Dof.TextWrapped = true
+
+SunRays.Name = "SunRays"
+SunRays.Parent = Settings
+SunRays.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+SunRays.BackgroundTransparency = 1.000
+SunRays.Position = UDim2.new(0.127043903, 0, 0.432549506, 0)
+SunRays.Size = UDim2.new(0.841900647, 0, 0.0368272029, 0)
+SunRays.Font = Enum.Font.SourceSans
+SunRays.Text = "SunRays"
+SunRays.TextColor3 = Color3.fromRGB(188, 188, 188)
+SunRays.TextSize = 14.000
+SunRays.TextWrapped = true
+
+XButton_6.Name = "XButton"
+XButton_6.Parent = Settings
+XButton_6.BackgroundColor3 = Color3.fromRGB(255, 227, 0)
+XButton_6.BackgroundTransparency = 1.000
+XButton_6.Position = UDim2.new(0.0298926774, 0, 0.432549506, 0)
+XButton_6.Size = UDim2.new(0.0971512273, 0, 0.0368272029, 0)
+XButton_6.Font = Enum.Font.SourceSans
+XButton_6.Text = "-"
+XButton_6.TextColor3 = Color3.fromRGB(188, 188, 188)
+XButton_6.TextSize = 14.000
+XButton_6.TextWrapped = true
+
+Preferences.Name = "Preferences"
+Preferences.Parent = ShaderGui
+Preferences.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Preferences.BorderSizePixel = 0
+Preferences.Position = UDim2.new(0.215733975, 0, 0, 0)
+Preferences.Size = UDim2.new(0.154361725, 0, 1, 0)
+Preferences.ZIndex = 999
+
+FogSettings.Name = "FogSettings"
+FogSettings.Parent = Preferences
+FogSettings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FogSettings.BackgroundTransparency = 1.000
+FogSettings.BorderSizePixel = 0
+FogSettings.Size = UDim2.new(1, 0, 1, 0)
+FogSettings.Visible = false
+
+Setting3.Name = "Setting3"
+Setting3.Parent = FogSettings
+Setting3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting3.BackgroundTransparency = 1.000
+Setting3.Position = UDim2.new(0, 0, 0.173342779, 0)
+Setting3.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+Color1.Name = "Color1"
+Color1.Parent = Setting3
+Color1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color1.BackgroundTransparency = 1.000
+Color1.Position = UDim2.new(0.572165012, 0, 0, 0)
+Color1.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color1.Font = Enum.Font.SourceSans
+Color1.Text = "192"
+Color1.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color1.TextSize = 14.000
+Color1.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_4.Parent = Setting3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "FogColor"
+TextLabel_4.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_4.TextSize = 19.000
+TextLabel_4.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_4.TextWrapped = true
+
+Color2.Name = "Color2"
+Color2.Parent = Setting3
+Color2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color2.BackgroundTransparency = 1.000
+Color2.Position = UDim2.new(0.699230373, 0, 0, 0)
+Color2.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color2.Font = Enum.Font.SourceSans
+Color2.Text = "192"
+Color2.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color2.TextSize = 14.000
+Color2.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+Color3aaa.Name = "Color3aaa"
+Color3aaa.Parent = Setting3
+Color3aaa.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color3aaa.BackgroundTransparency = 1.000
+Color3aaa.Position = UDim2.new(0.826295733, 0, 0, 0)
+Color3aaa.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color3aaa.Font = Enum.Font.SourceSans
+Color3aaa.Text = "192"
+Color3aaa.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color3aaa.TextSize = 14.000
+Color3aaa.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+MenuSelect_2.Name = "MenuSelect"
+MenuSelect_2.Parent = FogSettings
+MenuSelect_2.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect_2.BackgroundTransparency = 0.500
+MenuSelect_2.BorderSizePixel = 0
+MenuSelect_2.Size = UDim2.new(0.999999762, 0, 0.0878186971, 0)
+MenuSelect_2.ZIndex = 1001
+
+TextLabel_5.Parent = MenuSelect_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0, 0, 0.258064508, 0)
+TextLabel_5.Size = UDim2.new(1, 0, 0.495997638, 0)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Preferences"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+Setting2.Name = "Setting2"
+Setting2.Parent = FogSettings
+Setting2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting2.BackgroundTransparency = 1.000
+Setting2.Position = UDim2.new(0, 0, 0.136515573, 0)
+Setting2.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox.Parent = Setting2
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "6000"
+TextBox.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox.TextSize = 14.000
+TextBox.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_6.Parent = Setting2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "FogEnd"
+TextLabel_6.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_6.TextSize = 19.000
+TextLabel_6.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_6.TextWrapped = true
+
+Setting1.Name = "Setting1"
+Setting1.Parent = FogSettings
+Setting1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting1.BackgroundTransparency = 1.000
+Setting1.Position = UDim2.new(0, 0, 0.0991501287, 0)
+Setting1.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+TextBox_2.Parent = Setting1
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.BackgroundTransparency = 1.000
+TextBox_2.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_2.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.Text = "0"
+TextBox_2.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_2.TextSize = 14.000
+TextBox_2.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_7.Parent = Setting1
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "FogStart"
+TextLabel_7.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_7.TextSize = 19.000
+TextLabel_7.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_7.TextWrapped = true
+
+BloomSettings.Name = "BloomSettings"
+BloomSettings.Parent = Preferences
+BloomSettings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BloomSettings.BackgroundTransparency = 1.000
+BloomSettings.BorderSizePixel = 0
+BloomSettings.Size = UDim2.new(1, 0, 1, 0)
+BloomSettings.Visible = false
+
+Setting1_2.Name = "Setting1"
+Setting1_2.Parent = BloomSettings
+Setting1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting1_2.BackgroundTransparency = 1.000
+Setting1_2.Position = UDim2.new(0, 0, 0.0991501287, 0)
+Setting1_2.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+TextBox_3.Parent = Setting1_2
+TextBox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.BackgroundTransparency = 1.000
+TextBox_3.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_3.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_3.Font = Enum.Font.SourceSans
+TextBox_3.Text = "1"
+TextBox_3.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_3.TextSize = 14.000
+TextBox_3.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_8.Parent = Setting1_2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Intensity"
+TextLabel_8.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_8.TextSize = 19.000
+TextLabel_8.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_8.TextWrapped = true
+
+MenuSelect_3.Name = "MenuSelect"
+MenuSelect_3.Parent = BloomSettings
+MenuSelect_3.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect_3.BackgroundTransparency = 0.500
+MenuSelect_3.BorderSizePixel = 0
+MenuSelect_3.Size = UDim2.new(0.999999762, 0, 0.0878186971, 0)
+MenuSelect_3.ZIndex = 1001
+
+TextLabel_9.Parent = MenuSelect_3
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0, 0, 0.258064508, 0)
+TextLabel_9.Size = UDim2.new(1, 0, 0.495997638, 0)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Preferences"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+Setting2_2.Name = "Setting2"
+Setting2_2.Parent = BloomSettings
+Setting2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting2_2.BackgroundTransparency = 1.000
+Setting2_2.Position = UDim2.new(0, 0, 0.136515573, 0)
+Setting2_2.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_4.Parent = Setting2_2
+TextBox_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_4.BackgroundTransparency = 1.000
+TextBox_4.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_4.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_4.Font = Enum.Font.SourceSans
+TextBox_4.Text = "24"
+TextBox_4.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_4.TextSize = 14.000
+TextBox_4.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_10.Parent = Setting2_2
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Size"
+TextLabel_10.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_10.TextSize = 19.000
+TextLabel_10.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_10.TextWrapped = true
+
+Setting3_2.Name = "Setting3"
+Setting3_2.Parent = BloomSettings
+Setting3_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting3_2.BackgroundTransparency = 1.000
+Setting3_2.Position = UDim2.new(0, 0, 0.173342779, 0)
+Setting3_2.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_5.Parent = Setting3_2
+TextBox_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_5.BackgroundTransparency = 1.000
+TextBox_5.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_5.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_5.Font = Enum.Font.SourceSans
+TextBox_5.Text = "2"
+TextBox_5.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_5.TextSize = 14.000
+TextBox_5.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_11.Parent = Setting3_2
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "Treshold"
+TextLabel_11.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_11.TextSize = 19.000
+TextLabel_11.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_11.TextWrapped = true
+
+LegacyCC.Name = "LegacyCC"
+LegacyCC.Parent = Preferences
+LegacyCC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LegacyCC.BackgroundTransparency = 1.000
+LegacyCC.BorderSizePixel = 0
+LegacyCC.Size = UDim2.new(1, 0, 1, 0)
+LegacyCC.Visible = false
+
+Setting3_3.Name = "Setting3"
+Setting3_3.Parent = LegacyCC
+Setting3_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting3_3.BackgroundTransparency = 1.000
+Setting3_3.Position = UDim2.new(0, 0, 0.0991501287, 0)
+Setting3_3.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+Color1_2.Name = "Color1"
+Color1_2.Parent = Setting3_3
+Color1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color1_2.BackgroundTransparency = 1.000
+Color1_2.Position = UDim2.new(0.572165012, 0, 0, 0)
+Color1_2.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color1_2.Font = Enum.Font.SourceSans
+Color1_2.Text = "255"
+Color1_2.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color1_2.TextSize = 14.000
+Color1_2.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_12.Parent = Setting3_3
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "Tint"
+TextLabel_12.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_12.TextSize = 19.000
+TextLabel_12.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_12.TextWrapped = true
+
+Color2_2.Name = "Color2"
+Color2_2.Parent = Setting3_3
+Color2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color2_2.BackgroundTransparency = 1.000
+Color2_2.Position = UDim2.new(0.699230373, 0, 0, 0)
+Color2_2.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color2_2.Font = Enum.Font.SourceSans
+Color2_2.Text = "255"
+Color2_2.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color2_2.TextSize = 14.000
+Color2_2.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+Color3aaa_2.Name = "Color3aaa"
+Color3aaa_2.Parent = Setting3_3
+Color3aaa_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color3aaa_2.BackgroundTransparency = 1.000
+Color3aaa_2.Position = UDim2.new(0.826295733, 0, 0, 0)
+Color3aaa_2.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color3aaa_2.Font = Enum.Font.SourceSans
+Color3aaa_2.Text = "255"
+Color3aaa_2.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color3aaa_2.TextSize = 14.000
+Color3aaa_2.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+MenuSelect_4.Name = "MenuSelect"
+MenuSelect_4.Parent = LegacyCC
+MenuSelect_4.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect_4.BackgroundTransparency = 0.500
+MenuSelect_4.BorderSizePixel = 0
+MenuSelect_4.Size = UDim2.new(0.999999762, 0, 0.0878186971, 0)
+MenuSelect_4.ZIndex = 1001
+
+TextLabel_13.Parent = MenuSelect_4
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0, 0, 0.258064508, 0)
+TextLabel_13.Size = UDim2.new(1, 0, 0.495997638, 0)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "Preferences"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+Setting2_3.Name = "Setting2"
+Setting2_3.Parent = LegacyCC
+Setting2_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting2_3.BackgroundTransparency = 1.000
+Setting2_3.Position = UDim2.new(0, 0, 0.173342779, 0)
+Setting2_3.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_6.Parent = Setting2_3
+TextBox_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_6.BackgroundTransparency = 1.000
+TextBox_6.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_6.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_6.Font = Enum.Font.SourceSans
+TextBox_6.Text = "0"
+TextBox_6.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_6.TextSize = 14.000
+TextBox_6.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_14.Parent = Setting2_3
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "Contrast"
+TextLabel_14.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_14.TextSize = 19.000
+TextLabel_14.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_14.TextWrapped = true
+
+Setting1_3.Name = "Setting1"
+Setting1_3.Parent = LegacyCC
+Setting1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting1_3.BackgroundTransparency = 1.000
+Setting1_3.Position = UDim2.new(0, 0, 0.136515573, 0)
+Setting1_3.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_7.Parent = Setting1_3
+TextBox_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_7.BackgroundTransparency = 1.000
+TextBox_7.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_7.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_7.Font = Enum.Font.SourceSans
+TextBox_7.Text = "0"
+TextBox_7.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_7.TextSize = 14.000
+TextBox_7.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_15.Parent = Setting1_3
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "Brightness"
+TextLabel_15.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_15.TextSize = 19.000
+TextLabel_15.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_15.TextWrapped = true
+
+Setting4.Name = "Setting4"
+Setting4.Parent = LegacyCC
+Setting4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting4.BackgroundTransparency = 1.000
+Setting4.Position = UDim2.new(0, 0, 0.210169956, 0)
+Setting4.Size = UDim2.new(1, 0, 0.0362889506, 0)
+
+TextBox_8.Parent = Setting4
+TextBox_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_8.BackgroundTransparency = 1.000
+TextBox_8.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_8.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_8.Font = Enum.Font.SourceSans
+TextBox_8.Text = "0"
+TextBox_8.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_8.TextSize = 14.000
+TextBox_8.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_16.Parent = Setting4
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = "Saturation"
+TextLabel_16.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_16.TextSize = 19.000
+TextLabel_16.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_16.TextWrapped = true
+
+CloudSettings.Name = "CloudSettings"
+CloudSettings.Parent = Preferences
+CloudSettings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloudSettings.BackgroundTransparency = 1.000
+CloudSettings.BorderSizePixel = 0
+CloudSettings.Size = UDim2.new(1, 0, 1, 0)
+CloudSettings.Visible = false
+
+Setting3_4.Name = "Setting3"
+Setting3_4.Parent = CloudSettings
+Setting3_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting3_4.BackgroundTransparency = 1.000
+Setting3_4.Position = UDim2.new(0, 0, 0.173342779, 0)
+Setting3_4.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+Color1_3.Name = "Color1"
+Color1_3.Parent = Setting3_4
+Color1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color1_3.BackgroundTransparency = 1.000
+Color1_3.Position = UDim2.new(0.572165012, 0, 0, 0)
+Color1_3.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color1_3.Font = Enum.Font.SourceSans
+Color1_3.Text = "255"
+Color1_3.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color1_3.TextSize = 14.000
+Color1_3.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_17.Parent = Setting3_4
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = "Color"
+TextLabel_17.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_17.TextSize = 19.000
+TextLabel_17.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_17.TextWrapped = true
+
+Color2_3.Name = "Color2"
+Color2_3.Parent = Setting3_4
+Color2_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color2_3.BackgroundTransparency = 1.000
+Color2_3.Position = UDim2.new(0.699230373, 0, 0, 0)
+Color2_3.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color2_3.Font = Enum.Font.SourceSans
+Color2_3.Text = "255"
+Color2_3.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color2_3.TextSize = 14.000
+Color2_3.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+Color3aaa_3.Name = "Color3aaa"
+Color3aaa_3.Parent = Setting3_4
+Color3aaa_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color3aaa_3.BackgroundTransparency = 1.000
+Color3aaa_3.Position = UDim2.new(0.826295733, 0, 0, 0)
+Color3aaa_3.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color3aaa_3.Font = Enum.Font.SourceSans
+Color3aaa_3.Text = "255"
+Color3aaa_3.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color3aaa_3.TextSize = 14.000
+Color3aaa_3.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+MenuSelect_5.Name = "MenuSelect"
+MenuSelect_5.Parent = CloudSettings
+MenuSelect_5.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect_5.BackgroundTransparency = 0.500
+MenuSelect_5.BorderSizePixel = 0
+MenuSelect_5.Size = UDim2.new(0.999999762, 0, 0.0878186971, 0)
+MenuSelect_5.ZIndex = 1001
+
+TextLabel_18.Parent = MenuSelect_5
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0, 0, 0.258064508, 0)
+TextLabel_18.Size = UDim2.new(1, 0, 0.495997638, 0)
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = "Preferences"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+Setting2_4.Name = "Setting2"
+Setting2_4.Parent = CloudSettings
+Setting2_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting2_4.BackgroundTransparency = 1.000
+Setting2_4.Position = UDim2.new(0, 0, 0.136515573, 0)
+Setting2_4.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_9.Parent = Setting2_4
+TextBox_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_9.BackgroundTransparency = 1.000
+TextBox_9.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_9.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_9.Font = Enum.Font.SourceSans
+TextBox_9.Text = "1"
+TextBox_9.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_9.TextSize = 14.000
+TextBox_9.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_19.Parent = Setting2_4
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_19.Font = Enum.Font.SourceSans
+TextLabel_19.Text = "Density"
+TextLabel_19.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_19.TextSize = 19.000
+TextLabel_19.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_19.TextWrapped = true
+
+Setting1_4.Name = "Setting1"
+Setting1_4.Parent = CloudSettings
+Setting1_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting1_4.BackgroundTransparency = 1.000
+Setting1_4.Position = UDim2.new(0, 0, 0.0991501287, 0)
+Setting1_4.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+TextBox_10.Parent = Setting1_4
+TextBox_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_10.BackgroundTransparency = 1.000
+TextBox_10.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_10.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_10.Font = Enum.Font.SourceSans
+TextBox_10.Text = ".6"
+TextBox_10.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_10.TextSize = 14.000
+TextBox_10.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_20.Parent = Setting1_4
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_20.Font = Enum.Font.SourceSans
+TextLabel_20.Text = "Cover"
+TextLabel_20.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_20.TextSize = 19.000
+TextLabel_20.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_20.TextWrapped = true
+
+WaterSettings.Name = "WaterSettings"
+WaterSettings.Parent = Preferences
+WaterSettings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WaterSettings.BackgroundTransparency = 1.000
+WaterSettings.BorderSizePixel = 0
+WaterSettings.Size = UDim2.new(1, 0, 1, 0)
+WaterSettings.Visible = false
+
+Setting3_5.Name = "Setting3"
+Setting3_5.Parent = WaterSettings
+Setting3_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting3_5.BackgroundTransparency = 1.000
+Setting3_5.Position = UDim2.new(0, 0, 0.0991501287, 0)
+Setting3_5.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+Color1_4.Name = "Color1"
+Color1_4.Parent = Setting3_5
+Color1_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color1_4.BackgroundTransparency = 1.000
+Color1_4.Position = UDim2.new(0.572165012, 0, 0, 0)
+Color1_4.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color1_4.Font = Enum.Font.SourceSans
+Color1_4.Text = "12"
+Color1_4.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color1_4.TextSize = 14.000
+Color1_4.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_21.Parent = Setting3_5
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_21.Font = Enum.Font.SourceSans
+TextLabel_21.Text = "WaterColor"
+TextLabel_21.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_21.TextSize = 19.000
+TextLabel_21.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_21.TextWrapped = true
+
+Color2_4.Name = "Color2"
+Color2_4.Parent = Setting3_5
+Color2_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color2_4.BackgroundTransparency = 1.000
+Color2_4.Position = UDim2.new(0.699230373, 0, 0, 0)
+Color2_4.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color2_4.Font = Enum.Font.SourceSans
+Color2_4.Text = "84"
+Color2_4.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color2_4.TextSize = 14.000
+Color2_4.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+Color3aaa_4.Name = "Color3aaa"
+Color3aaa_4.Parent = Setting3_5
+Color3aaa_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color3aaa_4.BackgroundTransparency = 1.000
+Color3aaa_4.Position = UDim2.new(0.826295733, 0, 0, 0)
+Color3aaa_4.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color3aaa_4.Font = Enum.Font.SourceSans
+Color3aaa_4.Text = "92"
+Color3aaa_4.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color3aaa_4.TextSize = 14.000
+Color3aaa_4.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+MenuSelect_6.Name = "MenuSelect"
+MenuSelect_6.Parent = WaterSettings
+MenuSelect_6.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect_6.BackgroundTransparency = 0.500
+MenuSelect_6.BorderSizePixel = 0
+MenuSelect_6.Size = UDim2.new(0.999999762, 0, 0.0878186971, 0)
+MenuSelect_6.ZIndex = 1001
+
+TextLabel_22.Parent = MenuSelect_6
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.Position = UDim2.new(0, 0, 0.258064508, 0)
+TextLabel_22.Size = UDim2.new(1, 0, 0.495997638, 0)
+TextLabel_22.Font = Enum.Font.SourceSans
+TextLabel_22.Text = "Preferences"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
+
+Setting2_5.Name = "Setting2"
+Setting2_5.Parent = WaterSettings
+Setting2_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting2_5.BackgroundTransparency = 1.000
+Setting2_5.Position = UDim2.new(0, 0, 0.173342779, 0)
+Setting2_5.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_11.Parent = Setting2_5
+TextBox_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_11.BackgroundTransparency = 1.000
+TextBox_11.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_11.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_11.Font = Enum.Font.SourceSans
+TextBox_11.Text = "1"
+TextBox_11.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_11.TextSize = 14.000
+TextBox_11.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_23.Parent = Setting2_5
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_23.Font = Enum.Font.SourceSans
+TextLabel_23.Text = "WaveSize"
+TextLabel_23.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_23.TextSize = 19.000
+TextLabel_23.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_23.TextWrapped = true
+
+Setting1_5.Name = "Setting1"
+Setting1_5.Parent = WaterSettings
+Setting1_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting1_5.BackgroundTransparency = 1.000
+Setting1_5.Position = UDim2.new(0, 0, 0.136515573, 0)
+Setting1_5.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_12.Parent = Setting1_5
+TextBox_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_12.BackgroundTransparency = 1.000
+TextBox_12.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_12.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_12.Font = Enum.Font.SourceSans
+TextBox_12.Text = "1"
+TextBox_12.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_12.TextSize = 14.000
+TextBox_12.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_24.Parent = Setting1_5
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_24.Font = Enum.Font.SourceSans
+TextLabel_24.Text = "Reflectance"
+TextLabel_24.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_24.TextSize = 19.000
+TextLabel_24.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_24.TextWrapped = true
+
+Setting4_2.Name = "Setting4"
+Setting4_2.Parent = WaterSettings
+Setting4_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting4_2.BackgroundTransparency = 1.000
+Setting4_2.Position = UDim2.new(0, 0, 0.210169956, 0)
+Setting4_2.Size = UDim2.new(1, 0, 0.0362889506, 0)
+
+TextBox_13.Parent = Setting4_2
+TextBox_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_13.BackgroundTransparency = 1.000
+TextBox_13.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_13.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_13.Font = Enum.Font.SourceSans
+TextBox_13.Text = ".15"
+TextBox_13.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_13.TextSize = 14.000
+TextBox_13.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_25.Parent = Setting4_2
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.BackgroundTransparency = 1.000
+TextLabel_25.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_25.Font = Enum.Font.SourceSans
+TextLabel_25.Text = "WaveSpeed"
+TextLabel_25.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_25.TextSize = 19.000
+TextLabel_25.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_25.TextWrapped = true
+
+Setting5.Name = "Setting5"
+Setting5.Parent = WaterSettings
+Setting5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting5.BackgroundTransparency = 1.000
+Setting5.Position = UDim2.new(0, 0, 0.246997148, 0)
+Setting5.Size = UDim2.new(1, 0, 0.0362889282, 0)
+
+TextBox_14.Parent = Setting5
+TextBox_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_14.BackgroundTransparency = 1.000
+TextBox_14.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_14.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_14.Font = Enum.Font.SourceSans
+TextBox_14.Text = "1"
+TextBox_14.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_14.TextSize = 14.000
+TextBox_14.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_26.Parent = Setting5
+TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.BackgroundTransparency = 1.000
+TextLabel_26.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_26.Font = Enum.Font.SourceSans
+TextLabel_26.Text = "Transparency"
+TextLabel_26.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_26.TextSize = 19.000
+TextLabel_26.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_26.TextWrapped = true
+
+SmartCC.Name = "SmartCC"
+SmartCC.Parent = Preferences
+SmartCC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SmartCC.BackgroundTransparency = 1.000
+SmartCC.BorderSizePixel = 0
+SmartCC.Size = UDim2.new(1, 0, 1, 0)
+SmartCC.Visible = false
+
+Setting3_6.Name = "Setting3"
+Setting3_6.Parent = SmartCC
+Setting3_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting3_6.BackgroundTransparency = 1.000
+Setting3_6.Position = UDim2.new(0, 0, 0.0991501287, 0)
+Setting3_6.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+Color1_5.Name = "Color1"
+Color1_5.Parent = Setting3_6
+Color1_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color1_5.BackgroundTransparency = 1.000
+Color1_5.Position = UDim2.new(0.572165012, 0, 0, 0)
+Color1_5.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color1_5.Font = Enum.Font.SourceSans
+Color1_5.Text = "70"
+Color1_5.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color1_5.TextSize = 14.000
+Color1_5.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_27.Parent = Setting3_6
+TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.BackgroundTransparency = 1.000
+TextLabel_27.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_27.Font = Enum.Font.SourceSans
+TextLabel_27.Text = "Tint"
+TextLabel_27.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_27.TextSize = 19.000
+TextLabel_27.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_27.TextWrapped = true
+
+Color2_5.Name = "Color2"
+Color2_5.Parent = Setting3_6
+Color2_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color2_5.BackgroundTransparency = 1.000
+Color2_5.Position = UDim2.new(0.699230373, 0, 0, 0)
+Color2_5.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color2_5.Font = Enum.Font.SourceSans
+Color2_5.Text = "70"
+Color2_5.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color2_5.TextSize = 14.000
+Color2_5.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+Color3aaa_5.Name = "Color3aaa"
+Color3aaa_5.Parent = Setting3_6
+Color3aaa_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color3aaa_5.BackgroundTransparency = 1.000
+Color3aaa_5.Position = UDim2.new(0.826295733, 0, 0, 0)
+Color3aaa_5.Size = UDim2.new(0.105677061, 0, 0.999999881, 0)
+Color3aaa_5.Font = Enum.Font.SourceSans
+Color3aaa_5.Text = "70"
+Color3aaa_5.TextColor3 = Color3.fromRGB(188, 188, 188)
+Color3aaa_5.TextSize = 14.000
+Color3aaa_5.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+MenuSelect_7.Name = "MenuSelect"
+MenuSelect_7.Parent = SmartCC
+MenuSelect_7.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect_7.BackgroundTransparency = 0.500
+MenuSelect_7.BorderSizePixel = 0
+MenuSelect_7.Size = UDim2.new(0.999999762, 0, 0.0878186971, 0)
+MenuSelect_7.ZIndex = 1001
+
+TextLabel_28.Parent = MenuSelect_7
+TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.BackgroundTransparency = 1.000
+TextLabel_28.Position = UDim2.new(0, 0, 0.258064508, 0)
+TextLabel_28.Size = UDim2.new(1, 0, 0.495997638, 0)
+TextLabel_28.Font = Enum.Font.SourceSans
+TextLabel_28.Text = "Preferences"
+TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.TextScaled = true
+TextLabel_28.TextSize = 14.000
+TextLabel_28.TextWrapped = true
+
+Setting2_6.Name = "Setting2"
+Setting2_6.Parent = SmartCC
+Setting2_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting2_6.BackgroundTransparency = 1.000
+Setting2_6.Position = UDim2.new(0, 0, 0.173342779, 0)
+Setting2_6.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_15.Parent = Setting2_6
+TextBox_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_15.BackgroundTransparency = 1.000
+TextBox_15.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_15.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_15.Font = Enum.Font.SourceSans
+TextBox_15.Text = "0"
+TextBox_15.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_15.TextSize = 14.000
+TextBox_15.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_29.Parent = Setting2_6
+TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.BackgroundTransparency = 1.000
+TextLabel_29.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_29.Font = Enum.Font.SourceSans
+TextLabel_29.Text = "Exposure"
+TextLabel_29.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_29.TextSize = 19.000
+TextLabel_29.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_29.TextWrapped = true
+
+Setting1_6.Name = "Setting1"
+Setting1_6.Parent = SmartCC
+Setting1_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting1_6.BackgroundTransparency = 1.000
+Setting1_6.Position = UDim2.new(0, 0, 0.136515573, 0)
+Setting1_6.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_16.Parent = Setting1_6
+TextBox_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_16.BackgroundTransparency = 1.000
+TextBox_16.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_16.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_16.Font = Enum.Font.SourceSans
+TextBox_16.Text = "3"
+TextBox_16.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_16.TextSize = 14.000
+TextBox_16.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_30.Parent = Setting1_6
+TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.BackgroundTransparency = 1.000
+TextLabel_30.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_30.Font = Enum.Font.SourceSans
+TextLabel_30.Text = "Brightness"
+TextLabel_30.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_30.TextSize = 19.000
+TextLabel_30.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_30.TextWrapped = true
+
+SkySettings.Name = "SkySettings"
+SkySettings.Parent = Preferences
+SkySettings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SkySettings.BackgroundTransparency = 1.000
+SkySettings.BorderSizePixel = 0
+SkySettings.Size = UDim2.new(1, 0, 1, 0)
+SkySettings.Visible = false
+
+MenuSelect_8.Name = "MenuSelect"
+MenuSelect_8.Parent = SkySettings
+MenuSelect_8.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect_8.BackgroundTransparency = 0.500
+MenuSelect_8.BorderSizePixel = 0
+MenuSelect_8.Size = UDim2.new(0.999999762, 0, 0.0878186971, 0)
+MenuSelect_8.ZIndex = 1001
+
+TextLabel_31.Parent = MenuSelect_8
+TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.BackgroundTransparency = 1.000
+TextLabel_31.Position = UDim2.new(0, 0, 0.258064508, 0)
+TextLabel_31.Size = UDim2.new(1, 0, 0.495997638, 0)
+TextLabel_31.Font = Enum.Font.SourceSans
+TextLabel_31.Text = "Preferences"
+TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.TextScaled = true
+TextLabel_31.TextSize = 14.000
+TextLabel_31.TextWrapped = true
+
+Setting2_7.Name = "Setting2"
+Setting2_7.Parent = SkySettings
+Setting2_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting2_7.BackgroundTransparency = 1.000
+Setting2_7.Position = UDim2.new(0, 0, 0.136337936, 0)
+Setting2_7.Size = UDim2.new(1, 0, 0.0366442502, 0)
+
+TextBox_17.Parent = Setting2_7
+TextBox_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_17.BackgroundTransparency = 1.000
+TextBox_17.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_17.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_17.Font = Enum.Font.SourceSans
+TextBox_17.Text = "0"
+TextBox_17.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_17.TextSize = 14.000
+TextBox_17.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_32.Parent = Setting2_7
+TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.BackgroundTransparency = 1.000
+TextLabel_32.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_32.Font = Enum.Font.SourceSans
+TextLabel_32.Text = "GeoLatitude"
+TextLabel_32.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_32.TextSize = 19.000
+TextLabel_32.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_32.TextWrapped = true
+
+Setting1_7.Name = "Setting1"
+Setting1_7.Parent = SkySettings
+Setting1_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting1_7.BackgroundTransparency = 1.000
+Setting1_7.Position = UDim2.new(0, 0, 0.0991501287, 0)
+Setting1_7.Size = UDim2.new(1, 0, 0.0366442502, 0)
+
+TextBox_18.Parent = Setting1_7
+TextBox_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_18.BackgroundTransparency = 1.000
+TextBox_18.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_18.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_18.Font = Enum.Font.SourceSans
+TextBox_18.Text = "8"
+TextBox_18.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_18.TextSize = 14.000
+TextBox_18.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_33.Parent = Setting1_7
+TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.BackgroundTransparency = 1.000
+TextLabel_33.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_33.Font = Enum.Font.SourceSans
+TextLabel_33.Text = "Time"
+TextLabel_33.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_33.TextSize = 19.000
+TextLabel_33.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_33.TextWrapped = true
+
+Setting4_3.Name = "Setting4"
+Setting4_3.Parent = SkySettings
+Setting4_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting4_3.BackgroundTransparency = 1.000
+Setting4_3.Position = UDim2.new(0, 0, 0.173525676, 0)
+Setting4_3.Size = UDim2.new(1, 0, 0.0366442725, 0)
+
+TextBox_19.Parent = Setting4_3
+TextBox_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_19.BackgroundTransparency = 1.000
+TextBox_19.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_19.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_19.Font = Enum.Font.SourceSans
+TextBox_19.Text = "3000"
+TextBox_19.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_19.TextSize = 14.000
+TextBox_19.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_34.Parent = Setting4_3
+TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.BackgroundTransparency = 1.000
+TextLabel_34.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_34.Font = Enum.Font.SourceSans
+TextLabel_34.Text = "StarCount"
+TextLabel_34.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_34.TextSize = 19.000
+TextLabel_34.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_34.TextWrapped = true
+
+Setting3_7.Name = "Setting3"
+Setting3_7.Parent = SkySettings
+Setting3_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting3_7.BackgroundTransparency = 1.000
+Setting3_7.Position = UDim2.new(0, 0, 0.210169941, 0)
+Setting3_7.Size = UDim2.new(1, 0, 0.0362889841, 0)
+
+TextBox_20.Parent = Setting3_7
+TextBox_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_20.BackgroundTransparency = 1.000
+TextBox_20.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_20.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_20.Font = Enum.Font.SourceSans
+TextBox_20.Text = "1"
+TextBox_20.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_20.TextSize = 14.000
+TextBox_20.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_35.Parent = Setting3_7
+TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.BackgroundTransparency = 1.000
+TextLabel_35.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_35.Font = Enum.Font.SourceSans
+TextLabel_35.Text = "Diffuse"
+TextLabel_35.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_35.TextSize = 19.000
+TextLabel_35.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_35.TextWrapped = true
+
+Setting5_2.Name = "Setting5"
+Setting5_2.Parent = SkySettings
+Setting5_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting5_2.BackgroundTransparency = 1.000
+Setting5_2.Position = UDim2.new(0, 0, 0.246458918, 0)
+Setting5_2.Size = UDim2.new(1, 0, 0.036827106, 0)
+
+TextBox_21.Parent = Setting5_2
+TextBox_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_21.BackgroundTransparency = 1.000
+TextBox_21.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_21.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_21.Font = Enum.Font.SourceSans
+TextBox_21.Text = "1"
+TextBox_21.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_21.TextSize = 14.000
+TextBox_21.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_36.Parent = Setting5_2
+TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.BackgroundTransparency = 1.000
+TextLabel_36.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_36.Font = Enum.Font.SourceSans
+TextLabel_36.Text = "Specular"
+TextLabel_36.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_36.TextSize = 19.000
+TextLabel_36.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_36.TextWrapped = true
+
+SunRaysSettings.Name = "SunRaysSettings"
+SunRaysSettings.Parent = Preferences
+SunRaysSettings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SunRaysSettings.BackgroundTransparency = 1.000
+SunRaysSettings.BorderSizePixel = 0
+SunRaysSettings.Size = UDim2.new(1, 0, 1, 0)
+
+Setting1_8.Name = "Setting1"
+Setting1_8.Parent = SunRaysSettings
+Setting1_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting1_8.BackgroundTransparency = 1.000
+Setting1_8.Position = UDim2.new(0, 0, 0.0991501287, 0)
+Setting1_8.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+TextBox_22.Parent = Setting1_8
+TextBox_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_22.BackgroundTransparency = 1.000
+TextBox_22.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_22.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_22.Font = Enum.Font.SourceSans
+TextBox_22.Text = ".25"
+TextBox_22.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_22.TextSize = 14.000
+TextBox_22.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_37.Parent = Setting1_8
+TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.BackgroundTransparency = 1.000
+TextLabel_37.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_37.Font = Enum.Font.SourceSans
+TextLabel_37.Text = "Intensity"
+TextLabel_37.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_37.TextSize = 19.000
+TextLabel_37.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_37.TextWrapped = true
+
+MenuSelect_9.Name = "MenuSelect"
+MenuSelect_9.Parent = SunRaysSettings
+MenuSelect_9.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect_9.BackgroundTransparency = 0.500
+MenuSelect_9.BorderSizePixel = 0
+MenuSelect_9.Size = UDim2.new(0.999999762, 0, 0.0878186971, 0)
+MenuSelect_9.ZIndex = 1001
+
+TextLabel_38.Parent = MenuSelect_9
+TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.BackgroundTransparency = 1.000
+TextLabel_38.Position = UDim2.new(0, 0, 0.258064508, 0)
+TextLabel_38.Size = UDim2.new(1, 0, 0.495997638, 0)
+TextLabel_38.Font = Enum.Font.SourceSans
+TextLabel_38.Text = "Preferences"
+TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.TextScaled = true
+TextLabel_38.TextSize = 14.000
+TextLabel_38.TextWrapped = true
+
+Setting2_8.Name = "Setting2"
+Setting2_8.Parent = SunRaysSettings
+Setting2_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting2_8.BackgroundTransparency = 1.000
+Setting2_8.Position = UDim2.new(0, 0, 0.136515573, 0)
+Setting2_8.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_23.Parent = Setting2_8
+TextBox_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_23.BackgroundTransparency = 1.000
+TextBox_23.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_23.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_23.Font = Enum.Font.SourceSans
+TextBox_23.Text = "1"
+TextBox_23.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_23.TextSize = 14.000
+TextBox_23.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_39.Parent = Setting2_8
+TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.BackgroundTransparency = 1.000
+TextLabel_39.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_39.Font = Enum.Font.SourceSans
+TextLabel_39.Text = "Spread"
+TextLabel_39.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_39.TextSize = 19.000
+TextLabel_39.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_39.TextWrapped = true
+
+DofSettings.Name = "DofSettings"
+DofSettings.Parent = Preferences
+DofSettings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DofSettings.BackgroundTransparency = 1.000
+DofSettings.BorderSizePixel = 0
+DofSettings.Size = UDim2.new(1, 0, 1, 0)
+DofSettings.Visible = false
+
+Setting1_9.Name = "Setting1"
+Setting1_9.Parent = DofSettings
+Setting1_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting1_9.BackgroundTransparency = 1.000
+Setting1_9.Position = UDim2.new(0, 0, 0.0991501287, 0)
+Setting1_9.Size = UDim2.new(1, 0, 0.0368271917, 0)
+
+TextBox_24.Parent = Setting1_9
+TextBox_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_24.BackgroundTransparency = 1.000
+TextBox_24.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_24.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_24.Font = Enum.Font.SourceSans
+TextBox_24.Text = "100"
+TextBox_24.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_24.TextSize = 14.000
+TextBox_24.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_40.Parent = Setting1_9
+TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.BackgroundTransparency = 1.000
+TextLabel_40.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_40.Font = Enum.Font.SourceSans
+TextLabel_40.Text = "Intensity"
+TextLabel_40.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_40.TextSize = 19.000
+TextLabel_40.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_40.TextWrapped = true
+
+MenuSelect_10.Name = "MenuSelect"
+MenuSelect_10.Parent = DofSettings
+MenuSelect_10.BackgroundColor3 = Color3.fromRGB(102, 141, 226)
+MenuSelect_10.BackgroundTransparency = 0.500
+MenuSelect_10.BorderSizePixel = 0
+MenuSelect_10.Size = UDim2.new(0.999999762, 0, 0.0878186971, 0)
+MenuSelect_10.ZIndex = 1001
+
+TextLabel_41.Parent = MenuSelect_10
+TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.BackgroundTransparency = 1.000
+TextLabel_41.Position = UDim2.new(0, 0, 0.258064508, 0)
+TextLabel_41.Size = UDim2.new(1, 0, 0.495997638, 0)
+TextLabel_41.Font = Enum.Font.SourceSans
+TextLabel_41.Text = "Preferences"
+TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.TextScaled = true
+TextLabel_41.TextSize = 14.000
+TextLabel_41.TextWrapped = true
+
+Setting2_9.Name = "Setting2"
+Setting2_9.Parent = DofSettings
+Setting2_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting2_9.BackgroundTransparency = 1.000
+Setting2_9.Position = UDim2.new(0, 0, 0.136515573, 0)
+Setting2_9.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextBox_25.Parent = Setting2_9
+TextBox_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_25.BackgroundTransparency = 1.000
+TextBox_25.Position = UDim2.new(0.524017334, 0, 0, 0)
+TextBox_25.Size = UDim2.new(0.491446465, 0, 0.999999881, 0)
+TextBox_25.Font = Enum.Font.SourceSans
+TextBox_25.Text = "50"
+TextBox_25.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextBox_25.TextSize = 14.000
+TextBox_25.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+
+TextLabel_42.Parent = Setting2_9
+TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.BackgroundTransparency = 1.000
+TextLabel_42.Size = UDim2.new(0.572164953, 0, 1.00000012, 0)
+TextLabel_42.Font = Enum.Font.SourceSans
+TextLabel_42.Text = "FocusDis"
+TextLabel_42.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_42.TextSize = 19.000
+TextLabel_42.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_42.TextWrapped = true
+
+Setting3_8.Name = "Setting3"
+Setting3_8.Parent = DofSettings
+Setting3_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting3_8.BackgroundTransparency = 1.000
+Setting3_8.Position = UDim2.new(0, 0, 0.173342779, 0)
+Setting3_8.Size = UDim2.new(1, 0, 0.036288932, 0)
+
+TextLabel_43.Parent = Setting3_8
+TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_43.BackgroundTransparency = 1.000
+TextLabel_43.Position = UDim2.new(0.0520112477, 0, 0.468384027, 0)
+TextLabel_43.Size = UDim2.new(0.884232402, 0, 2.56127882, 0)
+TextLabel_43.Font = Enum.Font.SourceSans
+TextLabel_43.Text = "tip: use - and = to change to change the FocusDis quickly"
+TextLabel_43.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_43.TextScaled = true
+TextLabel_43.TextSize = 3.000
+TextLabel_43.TextStrokeColor3 = Color3.fromRGB(188, 188, 188)
+TextLabel_43.TextWrapped = true
+
+-- Scripts:
+
+local function MMMQEQ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.About.Visible=false
+		script.Parent.Parent.Parent.Settings.Visible=true
+		script.Parent.Parent.Parent.Parent.visible=true
+	end)
+end
+coroutine.wrap(MMMQEQ_fake_script)()
+local function EULQVN_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.About.Visible=true
+		script.Parent.Parent.Parent.Settings.Visible=false
+		script.Parent.Parent.Parent.Preferences=false
+	end)
+end
+coroutine.wrap(EULQVN_fake_script)()
+local function JWUJGRV_fake_script() -- XButton.LocalScript 
+	local script = Instance.new('LocalScript', XButton)
+
+	Checked = true
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		if Checked==true then
+			Checked=false
+			script.Parent.Text="-"
+			game.Lighting.Bloom.Enabled=false
+		else
+			Checked=true
+			script.Parent.Text="X"
+			game.Lighting.Bloom.Enabled=true
+		end
+	end)
+end
+coroutine.wrap(JWUJGRV_fake_script)()
+local function NFXCK_fake_script() -- Bloom.Script 
+	local script = Instance.new('Script', Bloom)
+
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.Parent.Preferences:GetChildren()) do
+			child.Visible = false
+		end
+		preference.BloomSettings.Visible=true
+	end)
+end
+coroutine.wrap(NFXCK_fake_script)()
+local function RUOT_fake_script() -- Fog.Script 
+	local script = Instance.new('Script', Fog)
+
+	Checked = true
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.Parent.Preferences:GetChildren()) do
+			child.Visible = false
+		end
+		preference.FogSettings.Visible=true
+	end)
+end
+coroutine.wrap(RUOT_fake_script)()
+local function AFMRYR_fake_script() -- Clouds.Script 
+	local script = Instance.new('Script', Clouds)
+
+	Checked = false
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.Parent.Preferences:GetChildren()) do
+			child.Visible = false
+		end
+		preference.CloudSettings.Visible=true
+	end)
+end
+coroutine.wrap(AFMRYR_fake_script)()
+local function LVSAFG_fake_script() -- XButton_2.LocalScript 
+	local script = Instance.new('LocalScript', XButton_2)
+
+	Checked = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if Checked==true then
+			Checked=false
+			script.Parent.Text="-"
+			game.Workspace.Terrain.Clouds.Enabled=false
+		else
+			Checked=true
+			script.Parent.Text="X"
+			game.Workspace.Terrain.Clouds.Enabled=true
+		end
+	end)
+end
+coroutine.wrap(LVSAFG_fake_script)()
+local function CXPRKKP_fake_script() -- WSS.Script 
+	local script = Instance.new('Script', WSS)
+
+	Checked = true
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.Parent.Preferences:GetChildren()) do
+			child.Visible = false
+		end
+		preference.WaterSettings.Visible=true
+	end)
+end
+coroutine.wrap(CXPRKKP_fake_script)()
+local function YARP_fake_script() -- XButton_3.LocalScript 
+	local script = Instance.new('LocalScript', XButton_3)
+
+	Checked = true
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if Checked==true then
+			Checked=false
+			script.Parent.Text="-"
+			sethiddenproperty(game:GetService("Workspace").Terrain, "Decoration", false)
+	
+			local ter = workspace.Terrain
+	
+			local config = {
+				Terrain = true
+			}
+		else
+			Checked=true
+			script.Parent.Text="X"
+			sethiddenproperty(game:GetService("Workspace").Terrain, "Decoration", true)
+	
+			local ter = workspace.Terrain
+	
+			local config = {
+				Terrain = true
+			}
+		end
+	end)
+end
+coroutine.wrap(YARP_fake_script)()
+local function WSRO_fake_script() -- Sky.Script 
+	local script = Instance.new('Script', Sky)
+
+	Checked = true
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.Parent.Preferences:GetChildren()) do
+			child.Visible = false
+		end
+		preference.SkySettings.Visible=true
+	end)
+end
+coroutine.wrap(WSRO_fake_script)()
+local function PCQUWRC_fake_script() -- LCC.Script 
+	local script = Instance.new('Script', LCC)
+
+	Checked = true
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.Parent.Preferences:GetChildren()) do
+			child.Visible = false
+		end
+		preference.LegacyCC.Visible=true
+	end)
+end
+coroutine.wrap(PCQUWRC_fake_script)()
+local function DHLRXLA_fake_script() -- SCC.Script 
+	local script = Instance.new('Script', SCC)
+
+	Checked = true
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.Parent.Preferences:GetChildren()) do
+			child.Visible = false
+		end
+		preference.SmartCC.Visible=true
+	end)
+end
+coroutine.wrap(DHLRXLA_fake_script)()
+local function EVPZQI_fake_script() -- XButton_4.LocalScript 
+	local script = Instance.new('LocalScript', XButton_4)
+
+	Checked = true
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if Checked==true then
+			Checked=false
+			script.Parent.Text="-"
+			game.Lighting.ColorCorrection.Enabled=false
+		else
+			Checked=true
+			script.Parent.Text="X"
+			game.Lighting.ColorCorrection.Enabled=true
+		end
+	end)
+end
+coroutine.wrap(EVPZQI_fake_script)()
+local function BGWTQDH_fake_script() -- XButton_5.LocalScript 
+	local script = Instance.new('LocalScript', XButton_5)
+
+	Checked = false
+	preference=script.Parent.Parent.Parent.Preferences.BloomSettings
+	script.Parent.MouseButton1Click:Connect(function()
+		if Checked==true then
+			Checked=false
+			script.Parent.Text="-"
+			game.Lighting.DepthOfField.Enabled=false
+		else
+			Checked=true
+			script.Parent.Text="X"
+			game.Lighting.DepthOfField.Enabled=true
+		end
+	end)
+end
+coroutine.wrap(BGWTQDH_fake_script)()
+local function ONANZFM_fake_script() -- Dof.Script 
+	local script = Instance.new('Script', Dof)
+
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.Parent.Preferences:GetChildren()) do
+			child.Visible = false
+		end
+		preference.DofSettings.Visible=true
+	end)
+end
+coroutine.wrap(ONANZFM_fake_script)()
+local function CECRMI_fake_script() -- SunRays.Script 
+	local script = Instance.new('Script', SunRays)
+
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.Parent.Preferences:GetChildren()) do
+			child.Visible = false
+		end
+		preference.SunRaysSettings.Visible=true
+	end)
+end
+coroutine.wrap(CECRMI_fake_script)()
+local function YPMFOQM_fake_script() -- XButton_6.LocalScript 
+	local script = Instance.new('LocalScript', XButton_6)
+
+	Checked = false
+	preference=script.Parent.Parent.Parent.Preferences
+	script.Parent.MouseButton1Click:Connect(function()
+		if Checked==true then
+			Checked=false
+			script.Parent.Text="-"
+			game.Lighting.SunRays.Enabled=false
+		else
+			Checked=true
+			script.Parent.Text="X"
+			game.Lighting.SunRays.Enabled=true
+		end
+	end)
+end
+coroutine.wrap(YPMFOQM_fake_script)()
+local function FHWQF_fake_script() -- ShaderGui.LocalScript 
+	local script = Instance.new('LocalScript', ShaderGui)
+
+	local frame1 = script.Parent.MenuSelect -- path to the frame
+	local frame2 = script.Parent.About --
+	local frame3 = script.Parent.Settings --
+	local frame4 = script.Parent.Preferences
+	local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+	local visible = true
+	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+		key = key:lower() 
+		if key == 'p' and visible==true then -- if key pressed is b
+			frame1.Visible = false
+			frame2.Visible = false
+			frame3.Visible = false
+			frame4.Visible = false
+			visible=false
+		elseif key == 'p' and visible==false then
+		
+			frame1.Visible = true
+			frame2.Visible = true
+			frame3.Visible = true
+			frame4.Visible = true
+			visible=true
+		end
+	end)
+end
+coroutine.wrap(FHWQF_fake_script)()
+local function ELETXF_fake_script() -- ShaderGui.Script 
+	local script = Instance.new('Script', ShaderGui)
+
+	Bloomer = .1 -- how much the light reflects on white objects
+	game.Lighting:ClearAllChildren()
+	game.Workspace.Terrain:ClearAllChildren()
+	
+	Bloom = Instance.new("BloomEffect", game.Lighting)
+	skey = Instance.new("Sky", game.Lighting)
+	
+	Bloom.Intensity = Bloomer
+	print ("bloom set to the preferred anount")
+	Bloom.Size = 24
+	Bloom.Threshold = 2
+	
+	cloud = Instance.new("Clouds", game.Workspace.Terrain)
+	cloud.Cover=.6
+	cloud.Density=1
+	cloud.Enabled=false
+	
+	dep=Instance.new("DepthOfFieldEffect", game.Lighting)
+	dep.Enabled=false
+	dep.NearIntensity=0
+	
+	thing=Instance.new("SunRaysEffect", game.Lighting)
+	thing.Enabled=false
+	
+	colorcor=Instance.new("ColorCorrectionEffect", game.Lighting)
+	
+	game.Lighting.TimeOfDay = ("8:00:00")
+	game.Lighting.Ambient = (Color3.fromRGB(70, 70, 70))
+	game.Lighting.Brightness = 3
+	game.Lighting.ColorShift_Top= (Color3.fromRGB(0, 0, 0))
+	game.Lighting.ColorShift_Bottom= (Color3.fromRGB(0, 0, 0))
+	game.Lighting.EnvironmentDiffuseScale=1
+	game.Lighting.EnvironmentSpecularScale=1
+	game.Lighting.GlobalShadows= true
+	game.Lighting.OutdoorAmbient= Color3.fromRGB(127, 127, 127)
+	game.Lighting.ShadowSoftness=0
+	game.Lighting.GeographicLatitude=41
+	game.Lighting.ExposureCompensation=0
+	game.Lighting.FogColor=Color3.fromRGB(185, 185, 185)
+	game.Lighting.FogEnd = 6000
+	game.Lighting.FogStart=0
+	game.Workspace.Terrain.WaterTransparency=1
+	game.Workspace.Terrain.WaterReflectance=1
+	game.Workspace.Terrain.WaterWaveSize=1
+	
+	print("Shaders Loaded Successfully")
+end
+coroutine.wrap(ELETXF_fake_script)()
+local function EPJFVA_fake_script() -- Setting3.LocalScript 
+	local script = Instance.new('LocalScript', Setting3)
+
+	while true do
+		colore1=script.Parent.Color1.Text
+		colore2=script.Parent.Color2.Text
+		colore3=script.Parent.Color3aaa.Text
+		game.Lighting.FogColor=Color3.fromRGB(tonumber(colore1), tonumber(colore2), tonumber(colore3))
+		wait(.1)
+	end
+end
+coroutine.wrap(EPJFVA_fake_script)()
+local function GVMB_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.FogEnd=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(GVMB_fake_script)()
+local function MOPYRQ_fake_script() -- TextBox_2.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_2)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.FogStart=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(MOPYRQ_fake_script)()
+local function LXKCF_fake_script() -- TextBox_3.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_3)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.Bloom.Intensity=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(LXKCF_fake_script)()
+local function BICEYC_fake_script() -- TextBox_4.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_4)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.Bloom.Size=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(BICEYC_fake_script)()
+local function GXULWEN_fake_script() -- TextBox_5.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_5)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.Bloom.Threshold=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(GXULWEN_fake_script)()
+local function HPDWMW_fake_script() -- Setting3_3.LocalScript 
+	local script = Instance.new('LocalScript', Setting3_3)
+
+	while true do
+		colore1=script.Parent.Color1.Text
+		colore2=script.Parent.Color2.Text
+		colore3=script.Parent.Color3aaa.Text
+		game.Lighting.ColorCorrection.TintColor=Color3.fromRGB(tonumber(colore1), tonumber(colore2), tonumber(colore3))
+		wait(.1)
+	end
+end
+coroutine.wrap(HPDWMW_fake_script)()
+local function KUKWJN_fake_script() -- TextBox_6.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_6)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.ColorCorrection.Contrast=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(KUKWJN_fake_script)()
+local function ZFCIBU_fake_script() -- TextBox_7.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_7)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.ColorCorrection.Brightness=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(ZFCIBU_fake_script)()
+local function SFFREY_fake_script() -- TextBox_8.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_8)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.ColorCorrection.Saturation=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(SFFREY_fake_script)()
+local function IXOMQ_fake_script() -- Setting3_4.LocalScript 
+	local script = Instance.new('LocalScript', Setting3_4)
+
+	wait(.2)
+	while true do
+		colore1=script.Parent.Color1.Text
+		colore2=script.Parent.Color2.Text
+		colore3=script.Parent.Color3aaa.Text
+		game.Workspace.Terrain.Clouds.Color=Color3.fromRGB(tonumber(colore1), tonumber(colore2), tonumber(colore3))
+		wait(.1)
+	end
+end
+coroutine.wrap(IXOMQ_fake_script)()
+local function LYFKURA_fake_script() -- TextBox_9.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_9)
+
+	wait(.2)
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Workspace.Terrain.Clouds.Density=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(LYFKURA_fake_script)()
+local function JWEZMS_fake_script() -- TextBox_10.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_10)
+
+	wait(.2)
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Workspace.Terrain.Clouds.Cover=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(JWEZMS_fake_script)()
+local function WFTSD_fake_script() -- Setting3_5.LocalScript 
+	local script = Instance.new('LocalScript', Setting3_5)
+
+	while true do
+		colore1=script.Parent.Color1.Text
+		colore2=script.Parent.Color2.Text
+		colore3=script.Parent.Color3aaa.Text
+		game.Workspace.Terrain.WaterColor=Color3.fromRGB(tonumber(colore1), tonumber(colore2), tonumber(colore3))
+		wait(.1)
+	end
+end
+coroutine.wrap(WFTSD_fake_script)()
+local function YBPQ_fake_script() -- TextBox_11.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_11)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Workspace.Terrain.WaterWaveSize=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(YBPQ_fake_script)()
+local function FRQBMJ_fake_script() -- TextBox_12.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_12)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Workspace.Terrain.WaterReflectance=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(FRQBMJ_fake_script)()
+local function ORAFQUL_fake_script() -- TextBox_13.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_13)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Workspace.Terrain.WaterWaveSpeed=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(ORAFQUL_fake_script)()
+local function NFJZXCI_fake_script() -- TextBox_14.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_14)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Workspace.Terrain.WaterTransparency=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(NFJZXCI_fake_script)()
+local function KMHH_fake_script() -- Setting3_6.LocalScript 
+	local script = Instance.new('LocalScript', Setting3_6)
+
+	while true do
+		colore1=script.Parent.Color1.Text
+		colore2=script.Parent.Color2.Text
+		colore3=script.Parent.Color3aaa.Text
+		game.Lighting.OutdoorAmbient=Color3.fromRGB(tonumber(colore1), tonumber(colore2), tonumber(colore3))
+		wait(.1)
+	end
+end
+coroutine.wrap(KMHH_fake_script)()
+local function LBFDEPF_fake_script() -- TextBox_15.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_15)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.ExposureCompensation=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(LBFDEPF_fake_script)()
+local function RPNZZC_fake_script() -- TextBox_16.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_16)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.Brightness=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(RPNZZC_fake_script)()
+local function TYTFIA_fake_script() -- TextBox_17.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_17)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.GeographicLatitude=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(TYTFIA_fake_script)()
+local function RZVOXPO_fake_script() -- TextBox_18.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_18)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.ClockTime=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(RZVOXPO_fake_script)()
+local function DKPJF_fake_script() -- TextBox_19.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_19)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.Sky.StarCount=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(DKPJF_fake_script)()
+local function IKMXNZ_fake_script() -- TextBox_20.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_20)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.EnvironmentDiffuseScale=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(IKMXNZ_fake_script)()
+local function ZBEO_fake_script() -- TextBox_21.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_21)
+
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.EnvironmentSpecularScale=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(ZBEO_fake_script)()
+local function VFJWJTV_fake_script() -- TextBox_22.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_22)
+
+	wait(.3)
+	while true  do
+		balls=script.Parent.Text
+		game.Lighting.SunRays.Intensity=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(VFJWJTV_fake_script)()
+local function MAFBNX_fake_script() -- TextBox_23.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_23)
+
+	wait(.3)
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.SunRays.Spread=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(MAFBNX_fake_script)()
+local function CPDYC_fake_script() -- SunRaysSettings.LocalScriptr 
+	local script = Instance.new('LocalScript', SunRaysSettings)
+
+	local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+	
+	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+		key = key:lower() 
+		if key == '=' or key == '+' then -- if key pressed is b
+			script.Parent.Setting2.TextBox.Text=tonumber(script.Parent.Setting2.TextBox.Text+5)
+		elseif key == '-' then
+			script.Parent.Setting2.TextBox.Text=tonumber(script.Parent.Setting2.TextBox.Text-5)
+		end
+	end)
+end
+coroutine.wrap(CPDYC_fake_script)()
+local function IJBHLU_fake_script() -- TextBox_24.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_24)
+
+	wait(.3)
+	while true  do
+		balls=script.Parent.Text
+		game.Lighting.DepthOfField.FocusDistance=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(IJBHLU_fake_script)()
+local function KIUVPCQ_fake_script() -- TextBox_25.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_25)
+
+	wait(.3)
+	while true  do
+		balls=tonumber(script.Parent.Text)
+		game.Lighting.DepthOfField.InFocusRadius=balls
+		wait(.1)
+	end
+end
+coroutine.wrap(KIUVPCQ_fake_script)()
+local function XKQUM_fake_script() -- DofSettings.LocalScriptr 
+	local script = Instance.new('LocalScript', DofSettings)
+
+	local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+	
+	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+		key = key:lower() 
+		if key == '=' or key == '+' then -- if key pressed is b
+			script.Parent.Setting2.TextBox.Text=tonumber(script.Parent.Setting2.TextBox.Text+5)
+		elseif key == '-' then
+			script.Parent.Setting2.TextBox.Text=tonumber(script.Parent.Setting2.TextBox.Text-5)
+		end
+	end)
+end
+coroutine.wrap(XKQUM_fake_script)()
